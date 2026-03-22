@@ -1,0 +1,65 @@
+Starting the process...
+Today: 04-Dec-2025
+Is holiday? False
+Traceback (most recent call last):
+  File "/home/harshilkhatri2808/uat/tradeJenie/runMe.py", line 41, in <module>
+    run_script('updateinstrument.py')
+  File "/home/harshilkhatri2808/uat/tradeJenie/runMe.py", line 23, in run_script
+    subprocess.run(['python', script_name])
+  File "/usr/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 1024, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.11/subprocess.py", line 1901, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'python'
+Starting the process...
+Today: 07-Dec-2025
+Is holiday? False
+nifty_instruments.csv is already updated today. Skipping updateInstrument.py.
+trading.db not found. Initializing database...
+Database initialized successfully at /home/harshilkhatri2808/uat/tradeJenie/Trading.db
+Starting user logins and trade genie...
+Logging in user: HDK
+[INFO] Kite login URL: https://kite.zerodha.com/connect/login?api_key=0iqi9qsbesglr968&v=3
+[INFO] Successful Login with Request Token: N05zMVd2kHq20qBFMhWqS7C2rXO1lkR9
+[INFO] Token saved to file: access_token.json
+[✅] Access token generated and saved successfully for HDK.
+Logging in user: JPK
+[INFO] Kite login URL: https://kite.zerodha.com/connect/login?api_key=2e52tukxaqo0xave&v=3
+[INFO] Successful Login with Request Token: 1q5E1VMvo1wpmOx0mWg6ekqZqXp5HTPr
+[INFO] Token saved to file: access_token.json
+[✅] Access token generated and saved successfully for JPK.
+Logging in user: PMK
+[INFO] Kite login URL: https://kite.zerodha.com/connect/login?api_key=afpr40trjunagy0k&v=3
+[INFO] Successful Login with Request Token: E5ZPYTHvuUx9a16kjVUU3RJBmeHdKPGJ
+[INFO] Token saved to file: access_token.json
+[✅] Access token generated and saved successfully for PMK.
+Starting trade genie for user: HDK
+Starting trade genie for user: JPK
+Starting trade genie for user: PMK
+ℹ️ Profile: Jinal Parag Khatri | Current Time: 2025-12-07 15:07:05
+ℹ️ Profile: Parag Manubhai Khatri | Current Time: 2025-12-07 15:07:05
+ℹ️ Profile: Harshil Divyakant Khatri | Current Time: 2025-12-07 15:07:05
+Database initialized successfully at /home/harshilkhatri2808/uat/tradeJenie/Trading.db
+🚫 HDK GCP - UAT  |  HDK_RLY_H-FULL_H01_W  | TRADE mode is OFF SIMULATED_ORDER will be tracked
+Database initialized successfully at /home/harshilkhatri2808/uat/tradeJenie/Trading.db
+🚫 HDK GCP - UAT  |  HDK_RLY_H-M100_T30_W  | TRADE mode is OFF SIMULATED_ORDER will be tracked
+Database initialized successfully at /home/harshilkhatri2808/uat/tradeJenie/Trading.db
+🚫 PMK GCP - UAT  |  PMK_RLY_H-M100_H01_W  | TRADE mode is OFF SIMULATED_ORDER will be tracked
+✅ Broker position matches for Open Position or exceeds DB qty: 75 for NIFTY25D1625800PE
+✅30minute | Loaded open position from DB: {'Signal': 'BUY', 'SpotEntry': 26046.05, 'OptionSymbol': 'NIFTY25D1625800PE', 'Strike': 25800, 'Expiry': '2025-12-16', 'OptionSellPrice': 42.35, 'EntryTime': '2025-12-05 09:45:17', 'qty': 75, 'Interval': '30minute', 'RealTrade': 'no', 'EntryReason': 'ROLLOVER', 'ExpiryType': 'NEXT_WEEK', 'Strategy': 'RAILWAY_TRACK', 'Key': 'HDK_RLY_H-M100_T30_W', 'user_id': 1, 'hedge_option_symbol': 'NIFTY25D1625600PE', 'hedge_strike': 25600, 'hedge_option_buy_price': 20.15, 'hedge_qty': 75, 'hedge_entry_time': '2025-12-05 09:45:17'}
+➡️ HDK GCP - UAT  |  HDK_RLY_H-M100_T30_W  |  30minute Loaded open position: {'Signal': 'BUY', 'SpotEntry': 26046.05, 'OptionSymbol': 'NIFTY25D1625800PE', 'Strike': 25800, 'Expiry': '2025-12-16', 'OptionSellPrice': 42.35, 'EntryTime': '2025-12-05 09:45:17', 'qty': 75, 'Interval': '30minute', 'RealTrade': 'no', 'EntryReason': 'ROLLOVER', 'ExpiryType': 'NEXT_WEEK', 'Strategy': 'RAILWAY_TRACK', 'Key': 'HDK_RLY_H-M100_T30_W', 'user_id': 1, 'hedge_option_symbol': 'NIFTY25D1625600PE', 'hedge_strike': 25600, 'hedge_option_buy_price': 20.15, 'hedge_qty': 75, 'hedge_entry_time': '2025-12-05 09:45:17'}
+✅ Broker position matches for Open Position or exceeds DB qty: 75 for NIFTY25D1625800PE
+✅60minute | Loaded open position from DB: {'Signal': 'BUY', 'SpotEntry': 26142.8, 'OptionSymbol': 'NIFTY25D1625800PE', 'Strike': 25800, 'Expiry': '2025-12-16', 'OptionSellPrice': 36.1, 'EntryTime': '2025-12-05 11:15:14', 'qty': 75, 'Interval': '60minute', 'RealTrade': 'no', 'EntryReason': 'SIGNAL_GENERATED', 'ExpiryType': 'NEXT_WEEK', 'Strategy': 'RAILWAY_TRACK', 'Key': 'PMK_RLY_H-M100_H01_W', 'user_id': 3, 'hedge_option_symbol': 'NIFTY25D1625700PE', 'hedge_strike': 25700, 'hedge_option_buy_price': 24.9, 'hedge_qty': 75, 'hedge_entry_time': '2025-12-05 11:15:14'}
+➡️ PMK GCP - UAT  |  PMK_RLY_H-M100_H01_W  |  60minute Loaded open position: {'Signal': 'BUY', 'SpotEntry': 26142.8, 'OptionSymbol': 'NIFTY25D1625800PE', 'Strike': 25800, 'Expiry': '2025-12-16', 'OptionSellPrice': 36.1, 'EntryTime': '2025-12-05 11:15:14', 'qty': 75, 'Interval': '60minute', 'RealTrade': 'no', 'EntryReason': 'SIGNAL_GENERATED', 'ExpiryType': 'NEXT_WEEK', 'Strategy': 'RAILWAY_TRACK', 'Key': 'PMK_RLY_H-M100_H01_W', 'user_id': 3, 'hedge_option_symbol': 'NIFTY25D1625700PE', 'hedge_strike': 25700, 'hedge_option_buy_price': 24.9, 'hedge_qty': 75, 'hedge_entry_time': '2025-12-05 11:15:14'}
+✅ Broker position matches for Open Position or exceeds DB qty: 150 for NIFTY25D1625900PE
+✅60minute | Loaded open position from DB: {'Signal': 'BUY', 'SpotEntry': 26142.8, 'OptionSymbol': 'NIFTY25D1625900PE', 'Strike': 25900, 'Expiry': '2025-12-16', 'OptionSellPrice': 53.1, 'EntryTime': '2025-12-05 11:15:14', 'qty': 75, 'Interval': '60minute', 'RealTrade': 'no', 'EntryReason': 'SIGNAL_GENERATED', 'ExpiryType': 'NEXT_WEEK', 'Strategy': 'RAILWAY_TRACK', 'Key': 'HDK_RLY_H-FULL_H01_W', 'user_id': 1, 'hedge_option_symbol': 'NIFTY25D1625800PE', 'hedge_strike': 25800, 'hedge_option_buy_price': 35.95, 'hedge_qty': 75, 'hedge_entry_time': '2025-12-05 11:15:14'}
+➡️ HDK GCP - UAT  |  HDK_RLY_H-FULL_H01_W  |  60minute Loaded open position: {'Signal': 'BUY', 'SpotEntry': 26142.8, 'OptionSymbol': 'NIFTY25D1625900PE', 'Strike': 25900, 'Expiry': '2025-12-16', 'OptionSellPrice': 53.1, 'EntryTime': '2025-12-05 11:15:14', 'qty': 75, 'Interval': '60minute', 'RealTrade': 'no', 'EntryReason': 'SIGNAL_GENERATED', 'ExpiryType': 'NEXT_WEEK', 'Strategy': 'RAILWAY_TRACK', 'Key': 'HDK_RLY_H-FULL_H01_W', 'user_id': 1, 'hedge_option_symbol': 'NIFTY25D1625800PE', 'hedge_strike': 25800, 'hedge_option_buy_price': 35.95, 'hedge_qty': 75, 'hedge_entry_time': '2025-12-05 11:15:14'}
+HDK GCP - UAT  |  HDK_RLY_H-M100_T30_W  |  30minute Market is closed. Checking if market will open within 60 minutes...
+HDK GCP - UAT  |  HDK_RLY_H-M100_T30_W  |  30minute Market will not open within 60 minutes. Stopping program.
+PMK GCP - UAT  |  PMK_RLY_H-M100_H01_W  |  60minute Market is closed. Checking if market will open within 60 minutes...
+PMK GCP - UAT  |  PMK_RLY_H-M100_H01_W  |  60minute Market will not open within 60 minutes. Stopping program.
+HDK GCP - UAT  |  HDK_RLY_H-FULL_H01_W  |  60minute Market is closed. Checking if market will open within 60 minutes...
+HDK GCP - UAT  |  HDK_RLY_H-FULL_H01_W  |  60minute Market will not open within 60 minutes. Stopping program.
