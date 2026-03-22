@@ -1,0 +1,13 @@
+============================KEY STRUCTURE===============================================
+
+<USER><STRAT><MODE>-<HEDGE><TF><EXP><EXPD>
+<USER> UNIQUENAME OF USER  
+<STRAT>	GOD / RLY / HD	GOD
+<TF>	T03, T05, T15, T30, H01, H02, D01	T05
+<EXP>	W or M	W
+<MODE> H NH
+<HEDGE> = P10, M100, FULL
+
+example:
+HDK_RLY_NH_H01_W
+HDK_RLY_H-P10_H01_W

@@ -1,0 +1,7 @@
+*.log
+*.json
+*.csv
+*.db
+kitelogin.py
+log/
+__pycache__/
